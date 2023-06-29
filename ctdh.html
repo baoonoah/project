@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styledkdh.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- biggest div-->
+    <div class="dad">
+        <!-- content1 -->
+        <div class="cont1">
+            <p>Mua ngay với một lần nhấp chuột</p>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <!-- divmain2 -->
+    <div class="formmain">
+         <!-- image -->
+         <div class="product">
+            <img src="https://phuongtung.vn/pt/images/detailed/32/iphone-14-plus-den_4okd-2u.png" alt="">
+            <h3>Iphone 14 Plus 128Gb</h3>
+        </div>
+        <!-- form -->
+        <div class="details">
+        <form action="#">
+                <p>1.Thông tin người mua:</p>
+                <input type="radio" name="gender" value="anh">Anh
+                <input type="radio" name="gender" value="chi">Chị <br>
+                <input type="text" name="hoten" placeholder="Họ và tên của bạn (bắt buộc)"> <br>
+                <input type="text" name="sdt" placeholder="Số điện thoại của bạn (bắt buộc)">
+                <p>2.Địa chỉ nhận hàng:</p>
+                <input type="text" name="yeucau" placeholder="Vui lòng nhập địa chỉ!">
+                <p>3.Chọn cách thanh toán:</p>
+                <div class="tongtien">
+                    <td>Tổng tiền:</td>
+                    <span>27.990.000đ</span>
+                </div>
+                <div class="giam">
+                    <td>Giảm:</td>
+                    <span>-3.000.000đ</span>
+                </div>
+                <div class="thanhtoan">
+                    <td>Cần thanh toán:<td>
+                    <span style="color: ;">24.990.000đ</span>
+                </div> 
+                <p style="font-size: 14px;">Vui lòng chọn 1 trong các cách than toán sau:</p>
+                <input type="radio" name="thanhtoan" value="tienmat">Thanh toán tiền mặt khi nhận hàng <br>
+                <input type="radio" name="thanhtoan" value="card"> Thanh toán bằng thẻ ATM, Visa, Master khi nhận hàng <br>
+                Nhân viên sẽ mang máy quẹt thẻ tận nơi (tạm thời chưa hỗ trợ)
+                <button type="submit" name="dathang"><strong>HOÀN TẤT ĐẶT HÀNG</strong>
+                 <br> <span> Nhân viên bán hàng sẽ liên hệ xác nhận với bạn </span></button>
+        </form>
+    </div>
+</div>
+    </div>
+</body>
+</html>
+
+
+<?php
+	if(isset($_SESSION['cart'])){
+		
+	}
+?>
+<?php
+  if(isset($_SESSION['id_khachhang'])){
+?>
+
+<div class="container">
+  <!-- Responsive Arrow Progress Bar -->
+  <div class="arrow-steps clearfix">
+    <div class="step current"> <span> <a href="index.php?quanly=giohang" >Giỏ hàng</a></span> </div>
+    <div class="step"> <span><a href="index.php?quanly=vanchuyen" >Vận chuyển</a></span> </div>
+    <div class="step"> <span><a href="index.php?quanly=thongtinthanhtoan" >Thanh toán</a><span> </div>
+    <div class="step"> <span><a href="index.php?quanly=donhangdadat" >Lịch sử đơn hàng</a><span> </div>
+  </div>
+ 
+</div>
+<?php
+} 
+?>

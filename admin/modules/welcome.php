@@ -1,0 +1,1 @@
+<p style="font-size: 50px;text-align: center;">WELCOME TO ADMIN!</p>
